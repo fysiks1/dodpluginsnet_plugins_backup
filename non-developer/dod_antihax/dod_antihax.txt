@@ -1,0 +1,23 @@
+[en]
+NEW_VERSION = New version Available
+CVAR_NOTLOADED = CVARs File is not loaded
+GMDL_NOTLOADED = General Models File is not loaded
+MAPD_NOTLOADED = %s Dependencies File is not loaded
+BAD_CVAR = Bad CVAR
+BAD_FILE = Bad File
+MENU_CONTENT = ^n\wWarning [%d/%d]^n^n\r%d Bad CVARS^n^n%L^n%L^n%L
+MENU_1 = \y1. Let DoD Antihax Fix it
+MENU_2 = \y2. Let me fix it
+MENU_3 = \w3. Disconnect from the Server
+
+[fr]
+NEW_VERSION = Nouvelle version disponible
+CVAR_NOTLOADED = Fichier de CVARs non chargé
+GMDL_NOTLOADED = Fichier de models non chargé
+MAPD_NOTLOADED = Dependance de %s non chargé
+BAD_CVAR = Mauvaise CVAR
+BAD_FILE = Mauvais Fichier
+MENU_CONTENT = ^n\wAvertissement [%d/%d]^n^n\r%d Mauvaise(s) CVARS^n^n%L^n%L^n%L
+MENU_1 = \y1. Laisser DoD Antihax corriger
+MENU_2 = \y2. Laisser moi corriger
+MENU_3 = \w3. Quitter le serveur

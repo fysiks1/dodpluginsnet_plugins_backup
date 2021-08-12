@@ -1,0 +1,11 @@
+[en]
+LASTROUND	= Last Round on %s!
+LASTROUNDNM	= Last Round on %s!^nNext Map is %s!
+MAPRELOAD	= Last Round before Map %s is reloaded!
+NOTENOUGHPL	= Not enough Players to wait for RoundEnd!
+
+[de]
+LASTROUND	= Letzte Runde auf %s!
+LASTROUNDNM	= Letzte Runde auf %s!^nDie naechste Karte ist %s!
+MAPRELOAD	= Letzte Runde bevor die Karte %s neugestartet wird!
+NOTENOUGHPL	= Nicht genuegend Spieler um auf^ndas Ende der Runde zu warten!

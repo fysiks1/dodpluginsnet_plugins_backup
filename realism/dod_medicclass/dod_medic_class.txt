@@ -1,0 +1,118 @@
+[en]
+MEDIC_MODEL_FAIL = plugin prevented from loading due to missing model
+MEDIC_MODEL_PASS = plugin loaded successfully
+MEDIC_DISABLED = ** Plugin disabled due to missing model file **
+MEDIC_MENU_TITLE = Switch to Medic Class
+MEDIC_MENU_OPTION1 = Go Medic !
+MEDIC_MENU_OPTION2 = Not this time...
+MEDIC_MENU_OPTION3 = Display Help Screen
+MEDIC_MENU_OPTION4 = Stop displaying this menu for the rest of the map
+MEDIC_MENU_OPTION5 = Auto-spawn as a medic
+MEDIC_MENU_OPTION_RESET = Reset Medic Configurations
+MEDIC_MENU_COMMENT1 = say /medicmenu to display this menu again
+MEDIC_RESET_CONFIGS = You have succesfully reset your Medic Configuration
+MEDIC_MEDKIT_PICKUP = You have picked up an extra medkit
+MEDIC_SYRINGE_PICKUP = You have picked up an extra Syringe
+MEDIC_PRIMARY_DISABLED = You are not allowed to have primary weapons as a medic
+MEDIC_WAIT_ROUNDSTART = ** You must wait for the round to officially start before becoming a Medic **
+MEDIC_MINIMUMHP = ** You must have atleast %d health before being allowed to become a Medic **
+MEDIC_ALLIED_LIMIT = ** Server Allied Medic limit of %d has been reached **
+MEDIC_AXIS_LIMIT = ** Server Axis Medic limit of %d has been reached **
+MEDIC_BECOME_CHAT = *You are now a Medic
+MEDIC_BECOME_CENTER = You are now a Medic !! Do a good job and heal those soldiers !!
+MEDIC_FAR_FROM_SPAWN = ** You are too far from your spawn location to become a Medic Class **
+MEDIC_TEAMSPAM = I am a Medic !! say_team /medic to call for me !!
+MEDIC_ALREADY = ** You currently are a Medic **
+MEDIC_CALL = I need a Medic !!  Please check your map for my location !! I have %d health
+MEDIC_MEDKITS = MedKits
+MEDIC_SYRINGES = Syringes
+MEDIC_HELP_TITLE = DoD Medic Class Help
+MEDIC_HELP_BODY = <body bgcolor=#000000><iframe src=http://customdod.com/amxx_plugins/motds/dod_medic_class.html width=1000 height=1000 border=0 frameborder=0 scrolling=no></iframe></body>
+
+[fr]
+MEDIC_MODEL_FAIL = Le plug-in n'a pas pu être chargé à cause d'un model manquant
+MEDIC_MODEL_PASS = Le plug-in a été chargé avec succès.
+MEDIC_DISABLED = **Le plug-in a été arrêter à cause d'un model manquant. **
+MEDIC_MENU_TITLE = Class Devenir un medic
+MEDIC_MENU_OPTION1 = Aller medic!
+MEDIC_MENU_OPTION2 = Pas cette fois-ci...
+MEDIC_MENU_OPTION3 = Afficher le menu d'aide.
+MEDIC_MENU_OPTION4 = Arrêter d'afficher ce menu pour le reste de la partie.
+MEDIC_MENU_OPTION5 = Revivre automatiquement en tant que medic
+MEDIC_MENU_OPTION_RESET = Remettre les configurations du medic à défault.
+MEDIC_MENU_COMMENT1 = dit /medicmenu pour réafficher ce menu encore une fois.
+MEDIC_RESET_CONFIGS = Vous avez  remis la configuration à défault avec succès.
+MEDIC_MEDKIT_PICKUP = Vous avez ramassé un kit de medic additionel.
+MEDIC_SYRINGE_PICKUP = Vous avez ramassé une seringue additionel.
+MEDIC_PRIMARY_DISABLED = Vous ne pouvez pas avoir une arme primaire en tant que medic.
+MEDIC_WAIT_ROUNDSTART = ** Vous devez attendre que la partie commence officielement pour devenir un medic. **
+MEDIC_MINIMUMHP = ** Vous devez avoir au moins %d de votre vie avant de pouvoir devenir un medic. **
+MEDIC_ALLIED_LIMIT = **  La limite de medic allié du serveur a été atteinte. **
+MEDIC_AXIS_LIMIT = ** La limite de medic axis du serveur a été atteinte. **
+MEDIC_BECOME_CHAT = * Vous êtes maintenant un medic.
+MEDIC_BECOME_CENTER = Vous êtes maintenant un medic !! Faites du bon travail et soignez ces soldats !!
+MEDIC_FAR_FROM_SPAWN = ** Vous êtres trop loin de votre aire de ralliement pour devenir un medic. **
+MEDIC_TEAMSPAM = Je suis un medic !! say_team /medic pour m'appeler !!
+MEDIC_ALREADY = **Vous êtes présentement un medic **
+MEDIC_CALL = J'ai besoin d'un medic !! Regardez votre carte pour connaitre ma position !! J'ai %d vie,
+MEDIC_MEDKITS = Kits de medic
+MEDIC_SYRINGES = Seringues
+MEDIC_HELP_TITLE =  DoD Aide medic
+MEDIC_HELP_BODY = <body bgcolor=#000000><iframe src=http://customdod.com/amxx_plugins/motds/dod_medic_class_fr.html width=1000 height=1000 border=0 frameborder=0 scrolling=no></iframe></body>
+
+[ru]
+MEDIC_MODEL_FAIL = plugin dlya tovo chtobi vse normalno zagruzilos esli ne budit modeli
+MEDIC_MODEL_PASS = plugin xorosho zagruzilsya
+MEDIC_DISABLED = ** Plugin otmenin iz za tovo chto netu pravilnoy modeli **
+MEDIC_MENU_TITLE = Sdelat sebeya Medicom
+MEDIC_MENU_OPTION1 = Sdelat sebeya Medicom!
+MEDIC_MENU_OPTION2 = Ne v etot raz...
+MEDIC_MENU_OPTION3 = Pokazat kak rabotaet...
+MEDIC_MEDKIT_PICKUP = Ti podnyal eshe odin medic kit
+MEDIC_SYRINGE_PICKUP = Ti podnyal eshe odin shpritz
+MEDIC_PRIMARY_DISABLED = Nerazreshini chto be y tebeya bili arujia esli ti medic
+MEDIC_WAIT_ROUNDSTART = ** Ti dolgen jdat poka noviy round nachnetsa chtobi stat medicom **
+MEDIC_MINIMUMHP = ** Y tebeya doljno bit xoteyabi %d jisni dlya tovo chtobi ti stal medicom **
+MEDIC_ALLIED_LIMIT = ** Na Servere nelzya imet bolshe chem %d Allied Medicov **
+MEDIC_AXIS_LIMIT = ** Na Servere nelzya imet bolshe chem %d Axis Medicov  **
+MEDIC_BECOME_CHAT = *Ti teper medic!
+MEDIC_BECOME_CENTER = Ti teper Medic !! Davay sdelay xoroshuy rabotu i pomogi drugim soldatam !!
+MEDIC_FAR_FROM_SPAWN = ** Ti ochen daleko ot nachala bazi chtobi bit Medicom **
+MEDIC_TEAMSPAM = Ya Medic !! skaji say_team /medic shtobi meneya pozvat !!
+MEDIC_ALREADY = ** Ti sechas Medic! **
+MEDIC_CALL = Mne Nujen Medic !!  Pojalusta proverte vashe tochki na karte !! Y menya %d jesni
+MEDIC_MEDKITS = MedKits
+MEDIC_SYRINGES = Shpritzi
+MEDIC_HELP_TITLE = DoD Medic Class Pomosh
+MEDIC_HELP_BODY = <body bgcolor=#000000><iframe src=http://customdod.com/amxx_plugins/motds/dod_medic_class_ru.html width=1000 height=1000 border=0 frameborder=0 scrolling=no></iframe></body>
+
+[de]
+MEDIC_MODEL_FAIL = Aufgrund eines fehlenden models wurde das Laden des Plug-ins verhindert
+MEDIC_MODEL_PASS = Plug-in erfolgreich geladen
+MEDIC_DISABLED = ** Aufgrund eines fehlenden models ist das Plug-in deaktiviert **
+MEDIC_MENU_TITLE = Zu Sanitäter wechseln
+MEDIC_MENU_OPTION1 = Sanitäter werden!
+MEDIC_MENU_OPTION2 = Diesmal nicht...
+MEDIC_MENU_OPTION3 = Hilfe Bildschirm anzeigen
+MEDIC_MENU_OPTION4 = Dieses Menu den Rest des Spiels nicht mehr anzeigen
+MEDIC_MENU_OPTION5 = Automatisch als Sanitäter starten
+MEDIC_MENU_OPTION_RESET = Sanitäter Einstellungen zurücksetzen
+MEDIC_MENU_COMMENT1 = Schreibe /medicmenu um dieses Menu wieder aufzurufen
+MEDIC_RESET_CONFIGS = Ihre Sanitäter Einstellungen wurden zurückgesetzt
+MEDIC_MEDKIT_PICKUP = Sie haben ein extra Medkit aufgenommen
+MEDIC_SYRINGE_PICKUP = Sie haben eine extra Spritze aufgenommen
+MEDIC_PRIMARY_DISABLED = Als Sanitäter dürfen sie keine Primärwaffen tragen
+MEDIC_WAIT_ROUNDSTART = ** Sie müssen auf den nächsten Rundenbeginn warten um Sanitäter zu werden  **
+MEDIC_MINIMUMHP = ** Sie müssen mindestens %d Leben haben um Sanitäter zu werden **
+MEDIC_ALLIED_LIMIT = ** Das Sanitäter-Limit der Alliierten von %d auf diesem Server ist erreicht **
+MEDIC_AXIS_LIMIT = ** Das Sanitäter-Limit der Achsenmächte von %d auf diesem Server ist erreicht **
+MEDIC_BECOME_CHAT = * Sie sind jetzt Sanitäter
+MEDIC_BECOME_CENTER = Sie sind jetzt Sanitäter !! Machen sie einen guten Job und heilen sie ihre Soldaten !!
+MEDIC_FAR_FROM_SPAWN = ** Sie sind zu weit vom Startpunkt entfernt um Sanitäter zu werden **
+MEDIC_TEAMSPAM = Ich bin Sanitäter !! Schreibt im Teamchat /medic um mich zu rufen !!
+MEDIC_ALREADY = ** Sie sind zurzeit Sanitäter **
+MEDIC_CALL = Ich brauche einen Sanitäter !! Seht auf der Karte nach meiner Position !! Ich habe noch %d Leben
+MEDIC_MEDKITS = Medkits
+MEDIC_SYRINGES = Spritzen
+MEDIC_HELP_TITLE = DoD Sanitäter-Klasse Hilfe
+MEDIC_HELP_BODY = <body bgcolor=#000000><iframe src=http://customdod.com/amxx_plugins/motds/dod_medic_class_de.html width=1000 height=1000 border=0 frameborder=0 scrolling=no></iframe></body>

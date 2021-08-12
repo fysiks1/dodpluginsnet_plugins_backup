@@ -1,0 +1,129 @@
+DoD TK Revenge v1.1
+
+
+USAGE (cvars for amxx.cfg):
+===========================
+
+dod_tkrevenge_enabled <1/0>           =   enable/disable DoD TK Revenge
+                                          by default
+
+dod_tkrevenge_obeyimmunity <1/0>      =   enable/disable Admins with flag
+                                          "a" (Immunity) being excluded
+                                          from any revenge for TA/TKs.
+
+dod_tkrevenge_options <1/2/3/4>       =   sets the menu options for the
+                                          DoD TK Revenge Menu:
+                                          1 = Forgive!, 1hp (& Glow!), Slay!
+                                          2 = Forgive!, Slay!
+                                          3 = Forgive!, Slap 50percent!, Slay!
+                                          4 = Forgive!, DON'T Forgive!
+
+dod_tkrevenge_enableglow <1/0>        =   enable/disable glowing players
+                                          (menu & bot actions)
+
+dod_tkrevenge_forgiveslap <1/0>       =   enable/disable slapping the TKer
+                                          without damage if "Forgive!" was
+                                          chosen by the victim
+
+dod_tkrevenge_respawnslay <1/0>       =   enable/disable slaying TeamKillers
+                                          after respawning who have already
+                                          been dead when "Slay" was chosen
+
+dod_tkrevenge_killfx <1/0>            =   enable/disable special effects
+                                          for killing the TeamKiller
+                                          (fire explosion with sound)
+
+dod_tkrevenge_playersaytks <1/0>      =   allow/disallow players to check their
+                                          current TK-Count by saying "/tks"
+
+dod_tkrevenge_displaytacount <1/0>    =   enable/disable displaying a hudmessage
+                                          to players with info about their TA count
+                                          when it's increased.
+
+dod_tkrevenge_displaytkcount <1/0>    =   enable/disable displaying a hudmessage
+                                          to players with info about their TK count
+                                          when it's increased or decreased.
+
+dod_tkrevenge_tasequaltk <amount>     =   number of TeamAttacks that equal
+                                          an unforgiven TeamKill
+                                          (set to 0 to disable!)
+
+dod_tkrevenge_tareset <1/0>           =   enable/disable resetting every player's
+                                          current TA-count on round start
+
+dod_tkrevenge_novictimdeath <1/0>     =   enable/disable feature that prevents
+                                          victim's deaths to be increased by TKs
+
+dod_tkrevenge_spawnprotect <1/0>      =   enable/disable automatic slaying of
+                                          team killers in defined spawn time
+
+dod_tkrevenge_spawntahandle <1/2/0>   =   sets handling for Spawn-TAs
+                                          1 = Mirror Damage
+                                          2 = Kill TeamAttacker immediately
+                                          0 = disabled
+                                          (spawnprotect feature needs to be enabled!)
+
+dod_tkrevenge_addmirrordmg <amount>   =   sets amount of HP a SpawnAttacker loses
+                                          additionally to the damage mirrored back
+                                          at him from attacking a teammate
+                                          (only applies if "spawntahandle" is "1"!)
+
+dod_tkrevenge_spawndistance <amount>  =   distance to spawnpoint within what
+                                          TKs are considered Spawn-TKs
+                                          (default: 800)
+
+dod_tkrevenge_spawntkcount <amount>   =   number of warnings to add to the
+                                          spawn killers tk-count.
+                                         
+dod_tkrevenge_warnings <amount>       =   number of unforgiven TKs until
+                                          player is kicked/banned
+                                          (1hp/Slap are not counted as unforgiven)
+
+dod_tkrevenge_ban <1/0>               =   set to 1 to ban the teamkiller after
+                                          your amount of warnings.
+                                          set to 0 to just kick him
+
+dod_tkrevenge_bantime <time>          =   time in minutes to ban a teamkiller
+                                          from the server (if you enabled ban)
+
+dod_tkrevenge_useamxbans <1/0>        =   enable/disable using AMXBans to ban
+                                          players for excessive TeamKilling
+
+dod_tkrevenge_amxbansreason <reason>  =   sets reason which is displayed in AMXBans
+                                          Webinterface (use quotes!)
+                                          (default: "Excessive TeamKilling")
+
+dod_tkrevenge_meleeslay <1/0>         =   immediatly kill player on melee
+                                          TA/TK (see description for more info!)
+
+dod_tkrevenge_meleetkcount <amount>   =   number of warnings to add to the
+                                          back stabbers tk-count.
+
+dod_tkrevenge_nadetkcount <1/0>       =   enable/disable increasing the tk-count
+                                          on unforgiven grenade tks
+
+dod_tkrevenge_karmareducetk <amount>  =   Karma points needed to reduce player's
+                                          TK-count by 1 while a TK zeroes the
+                                          karma counter again!
+                                          (set to 0 to disable)
+
+dod_tkrevenge_killkarma <amount>      =   amount of karma points a player gains
+                                          for killing an enemy
+
+dod_tkrevenge_scorekarma <amount>     =   amount of karma points a player gains
+                                          for capping a flag
+
+dod_tkrevenge_botaction <1/2/3/4/5/0> =   sets action for TKs on Bots
+                                          1 = Forgive!
+                                          2 = 1hp (& Glow!)
+                                          3 = Slay!
+                                          4 = Slap 50percent!
+                                          5 = DON'T Forgive!
+                                          0 = disabled
+
+dod_tkrevenge_savetks <1/0>           =   enable/disable saving each player's
+                                          TK-count and reload it on reconnect
+
+dod_tkrevenge_table <tablename>       =   sets table name that is created/used in
+                                          your database (dbi-version ONLY!)
+

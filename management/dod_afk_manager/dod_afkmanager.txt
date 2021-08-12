@@ -1,0 +1,17 @@
+[en]
+KICKAFK			= %s has been kicked due to being AFK!
+KICKAFKREASON		= You have been AFK for too long!
+KICKSPEC		= %s has been kicked due to spectating too long!
+KICKSPECREASON		= You have been spectating for too long!
+
+[de]
+KICKAFK			= %s wurde wegen Inaktivitaet gekickt!
+KICKAFKREASON		= Du warst zu lange inaktiv!
+KICKSPEC		= %s war zu lange inaktiver Zuschauer und wurde gekickt!
+KICKSPECREASON		= Du hast zu lange nur zugeschaut!
+
+[fr]
+KICKAFK			= %s a ete kicke pour avoir ete AFK trop lontemps!
+KICKAFKREASON		= Vous avez ete AFK trop lontemps!
+KICKSPEC		= %s a ete kicke pour avoir ete spectateur trop lontemps!
+KICKSPECREASON		= Vous avez ete spectateur trop lontemps!

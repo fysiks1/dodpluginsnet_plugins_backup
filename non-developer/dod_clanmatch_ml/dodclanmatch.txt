@@ -1,0 +1,242 @@
+[en]
+HLTV_STOP = Stopping Recording of HLTV demo !
+HLTV_START = Starting Recording of HLTV demo !
+HLTV_NOT_CONNECT = HLTV is not connected !
+NO_HLTV = Couldn't connect to HLTV at %s
+MESSAGE_RED_START = Clan %s Clan-Leader ! Say ^"%s^"^nto start the match !
+NO_CHANGE_MATCH = You can't change a running ClanMatch !
+SETTINGS_LOADED = Settings from file dod_matchbase.cfg loaded !
+CFG_FILE_NOT_EXIST = Failed to load match settings ! File dod_matchbase.cfg does not exist !
+INFOS_1 = Map1 = %s ; Map2 = %s ; MapMode = %d ; Time = %d ; FF = %d ; 
+INFOS_2 = ShowTime = %d ; ShowScore = %d ; Password = %s ; 
+INFOS_3 = ServerName = %s ; ClanTag1 = %s ; ClanTag2 = %s ; 
+INFOS_4 = ReadySignal = %s ; CancelSignal = %s ; MatchResultTime = %d
+MAP_NOT_VALID1 = Map1: %s is not valid! Check your spelling !
+MAP_NOT_VALID2 = Map2: %s is not valid! Check your spelling !
+MAPMOD_NOT_VALID = MapMode: %d is not valid! Use 1 or 2 !
+TIME_NOT_VALID = Time: %d is not valid! Choose a time greater than 0 !
+FF_NOT_VALID = FF: %d is not valid! Use 1 or 0 !
+SHOWTIME_NOT_VALID = ShowTime: %d is not valid! Use 1/2/3/4/0 !
+SHOWSCORE_NOT_VALID = ShowScore: %d is not valid! Use 1/2/3/4/5/6/0 !
+PASS_NOT_VALID = Password: %s is not valid! Choose another !
+MATCH_IS_RUNNING = DoD ClanMatch is already running !
+MATCH_IS_NOT_RUNNING = DoD ClanMatch is not running !
+MATCH_ABORDED = DoD ClanMatch is aborted !
+STATUS_ABORDED = Clan %s revoked ready-status !
+STATUS_READY = Clan %s is ready to fight !
+SIGNAL_CANCEL = Say ^"%s^" to revoke your ready-status !
+LAST_MINUTE = Last minute running
+MINUTES_RESTANTES = %d min remaining
+NOT_RESTART = DoD ClanMatch is NOT running! You can't restart the round !
+RESTART_ROUND = Restarting current Round !
+JOIN_TEAM_AXIS = Clan %s join Axis!
+JOIN_TEAM_ALLIES = Clan %s join Allies !
+SHOW_RESULT_1 = \yClan %s^n\w- Total Score: %d^n^n\yClan %s^n\w- Total Score: %d^n^n\yWinner: \w%s with %dpoints difference!^n^n\r2. \wDetails  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_RESULT_2 = \yClan %s^n\w- Total Score: %d^n^n\yClan %s^n\w- Total Score: %d^n^n\yWinner: \w%s with %dpoints difference!^n^n\r2. \wDetails  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_RESULT_3 = \yClan %s^n\w- Total Score: %d^n^n\yClan %s^n\w- Total Score: %d^n^n\yWinner: \w%s with %dpoints difference!^n^n\r2. \wDetails  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_DETAILS_1 = \yMap1: %s^n\w- Axis: %d^n- Allies: %d^n^n\yMap2: %s^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResult  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_DETAILS_2 = \yMap1: %s Round1^n\w- Axis: %d^n- Allies: %d^n\yMap1: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\yMap2: %s Round1^n\w- Axis: %d^n- Allies: %d^n\yMap2: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResult  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_DETAILS_3 = \yMap: %s Round1^n\w- Axis: %d^n- Allies: %d^n\yMap: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResult  /  \r3. \wMap Scores  /  \r0. \wClose
+SHOW_MAPSCORES_1 = \yMap1: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\yMap2: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\r1. \wResult  /  \r2. \wDetails  /  \r0. \wClose
+SHOW_MAPSCORES_2 = \yMap1: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\yMap2: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\r1. \wResult  /  \r2. \wDetails  /  \r0. \wClose
+SHOW_MAPSCORES_3 = \yMap: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\r1. \wResult  /  \r2. \wDetails  /  \r0. \wClose
+
+[fr]
+HLTV_STOP = Arret de l'HLTV !
+HLTV_START = Demarrage de l'HLTV !
+HLTV_NOT_CONNECT = L'HLTV n'est pas connectee !
+NO_HLTV = Connexion a l'hltv impossible au slot : %s !
+MESSAGE_RED_START = Leader %s : Tapez ^"%s^"^nquand vous etes prets a combattre !
+NO_CHANGE_MATCH = Vous ne pouvez pas modifier un match en court !
+SETTINGS_LOADED = Chargement du fichier de configuration ''dod_matchbase.cfg'' termine !
+CFG_FILE_NOT_EXIST = Le chargement du fichier de configuration ''dod_matchbase.cfg'' a echoue !
+INFOS_1 = Map1 = %s ; Map2 = %s ; ModeMap = %d ; Temps = %d ; FF = %d ; 
+INFOS_2 = AffichageTemps = %d ; AffichageScore = %d ; MotDePasse = %s ; 
+INFOS_3 = NomServeur = %s ; TagTeam1 = %s ; TagTeam2 = %s ; 
+INFOS_4 = SignalGo = %s ; SignalAnnule = %s ; TempsAffResMatch = %d
+MAP_NOT_VALID1 = Map1: %s invalide !
+MAP_NOT_VALID2 = Map2: %s invalide !
+MAPMOD_NOT_VALID = ModeMap: %d invalid ! Val : <1 ou 2> !
+TIME_NOT_VALID = Temps: %d invalid ! Val : <1 a 999>
+FF_NOT_VALID = FF: %d invalid ! Val : <0 ou 1> !
+SHOWTIME_NOT_VALID = AffichageTemps: %d invalid ! Val : 1/2/3/4/0 !
+SHOWSCORE_NOT_VALID = AffichageScore: %d invalid ! Val : 1/2/3/4/5/6/0 !
+PASS_NOT_VALID = Mot de passe: %s invalid !
+MATCH_IS_RUNNING = Un match est deja en court !
+MATCH_IS_NOT_RUNNING = Aucun match n'est en court !
+MATCH_ABORDED = Match annule !
+STATUS_ABORDED = La Team %s a annule son statut ''Ready'' !
+STATUS_READY = La Team %s est prete a combattre !
+SIGNAL_CANCEL = Tapez ^"%s^" pour annuler votre statut ''Ready'' !
+LAST_MINUTE = Derniere minute de jeux
+MINUTES_RESTANTES = %d min restantes
+NOT_RESTART = Aucun match n'est en court ! Vous ne pouvez donc pas redemarrer un round !
+RESTART_ROUND = Redemarrage du round !
+JOIN_TEAM_AXIS = Team %s en Axis
+JOIN_TEAM_ALLIES = Team %s en Allies
+SHOW_RESULT_1 = \yTeam %s^n\w- Score Total: %d^n^n\yTeam %s^n\w- Score Total: %d^n^n\yVainqueurs: \w%s avec %dpoints d'ecart !^n^n\r2. \wDetails  /  \r3. \wMap Scores  /  \r0. \wFermer
+SHOW_RESULT_2 = \yTeam %s^n\w- Score Total: %d^n^n\yTeam %s^n\w- Score Total: %d^n^n\yVainqueurs: \w%s avec %dpoints d'ecart !^n^n\r2. \wDetails  /  \r3. \wMap Scores  /  \r0. \wFermer
+SHOW_DETAILS_1 = \yMap1: %s^n\w- Axis: %d^n- Allies: %d^n^n\yMap2: %s^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultats  /  \r3. \wMap Scores  /  \r0. \wFermer
+SHOW_DETAILS_2 = \yMap1: %s Round1^n\w- Axis: %d^n- Allies: %d^n\yMap1: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\yMap2: %s Round1^n\w- Axis: %d^n- Allies: %d^n\yMap2: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultats  /  \r3. \wMap Scores  /  \r0. \wFermer
+SHOW_MAPSCORES_1 = \yMap1: %s^n\w- Team %s: %d^n- Team %s: %d^n^n\yMap2: %s^n\w- Team %s: %d^n- Team %s: %d^n^n\r1. \wResultats  /  \r2. \wDetails  /  \r0. \wFermer
+SHOW_MAPSCORES_2 = \yMap1: %s^n\w- Team %s: %d^n- Team %s: %d^n^n\yMap2: %s^n\w- Team %s: %d^n- Team %s: %d^n^n\r1. \wResultats  /  \r2. \wDetails  /  \r0. \wFermer
+
+[de]
+HLTV_STOP = Stope Aufnahme der HLTV demo !
+HLTV_START = Starte Aufnahme der HLTV demo !
+HLTV_NOT_CONNECT = HLTV is nicht verbunden !
+NO_HLTV = Konnte nicht zu HLTV %s connecten
+MESSAGE_RED_START = Clan %s Clan-Leader ! Sagt ^"%s^"^num das Match zu starten !
+NO_CHANGE_MATCH = Du kannst kein laufendes ClanMatch ändern !
+SETTINGS_LOADED = Einstellungen von Datei dod_matchbase.cfg geladen !
+CFG_FILE_NOT_EXIST = Konnte die Match Einstellungen nicht laden ! Die Datei dod_matchbase.cfg existiert nicht !
+INFOS_1 = Karte1 = %s ; Karte2 = %s ; KartenModus = %d ; Zeit = %d ; FF = %d ; 
+INFOS_2 = ZeigeZeit = %d ; ZeigePunkte = %d ; Passwort = %s ; 
+INFOS_3 = ServerName = %s ; ClanTag1 = %s ; ClanTag2 = %s ; 
+INFOS_4 = BereitschaftSignal = %s ; AbbruchSignal = %s ; MatchErgebnissZeit = %d
+MAP_NOT_VALID1 = Karte1: %s ist nicht gültig! Überprüfe die Schreibweise !
+MAP_NOT_VALID2 = Karte2: %s ist nicht gültig! Überprüfe die Schreibweise !
+MAPMOD_NOT_VALID = KartenModus: %d ist nicht gültig! Benutze 1 oder 2 !
+TIME_NOT_VALID = Zeit: %d ist nicht gültig! Wähle eine Zahl, größer als 0 !
+FF_NOT_VALID = FF: %d ist nicht gültig! Benutze 1 oder 0 !
+SHOWTIME_NOT_VALID = ZeigeZeit: %d ist nicht gültig! Benutze 1/2/3/4/0 !
+SHOWSCORE_NOT_VALID = ZeigePunkte: %d ist nicht gültig! Benutze 1/2/3/4/5/6/0 !
+PASS_NOT_VALID = Passwort: %s ist nicht gültig! Wähle ein anderes !
+MATCH_IS_RUNNING = DoD ClanMatch läuft bereits !
+MATCH_IS_NOT_RUNNING = DoD ClanMatch ist nicht gestartet !
+MATCH_ABORDED = DoD ClanMatch wurde abgebrochen !
+STATUS_ABORDED = Clan %s hat den Bereitschaft-status zurückgezogen !
+STATUS_READY = Clan %s ist bereit zu kämpfen !
+SIGNAL_CANCEL = Sag ^"%s^" um den Bereitschaft-status zurückzuziehen !
+LAST_MINUTE = Letzte Minute läuft
+MINUTES_RESTANTES = %d min verbleibend
+NOT_RESTART = DoD ClanMatch läuft NICHT! Du kannst die Runde nicht neustarten !
+RESTART_ROUND = Starte die aktuelle Runde neu !
+JOIN_TEAM_AXIS = Clan %s join Axis!
+JOIN_TEAM_ALLIES = Clan %s join Allies !
+SHOW_RESULT_1 = \yClan %s^n\w- Totale Punkte: %d^n^n\yClan %s^n\w- Totale Punkte: %d^n^n\yGewinner: \w%s mit %dPunkten unterschied!^n^n\r2. \wDetails  /  \r3. \wKarten Punkte  /  \r0. \wSchliessen
+SHOW_RESULT_2 = \yClan %s^n\w- Totale Punkte: %d^n^n\yClan %s^n\w- Totale Punkte: %d^n^n\yGewinner: \w%s mit %dPunkten unterschied!^n^n\r2. \wDetails  /  \r3. \wKarten Punkte  /  \r0. \wSchliessen
+SHOW_DETAILS_1 = \yKarte1: %s^n\w- Axis: %d^n- Allies: %d^n^n\yKarte2: %s^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wErgebnisse  /  \r3. \wKarten Punkte  /  \r0. \wSchliessen
+SHOW_DETAILS_2 = \yKarte1: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yKarte1: %s Runde2^n\w- Axis: %d^n- Allies: %d^n^n\yKarte2: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yKarte2: %s Runde2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wErgebniss  /  \r3. \wKarten Punkte  /  \r0. \wSchliessen
+SHOW_MAPSCORES_1 = \yKarte1: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\yKarte2: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\r1. \wErgebniss  /  \r2. \wDetails  /  \r0. \wSchliessen
+SHOW_MAPSCORES_2 = \yKarte1: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\yKarte2: %s^n\w- Clan %s: %d^n- Clan %s: %d^n^n\r1. \wErgebniss  /  \r2. \wDetails  /  \r0. \wSchliessen
+
+[dn]
+HLTV_STOP = Stopper optagelsen af HLTV demo!
+HLTV_START = Starting Recording of HLTV demo!
+HLTV_NOT_CONNECT = HLTV er ikke forbundet!
+NO_HLTV = Kunne ikke skabe forbindelse til HLTV på %s
+MESSAGE_RED_START = Klan %s klanleder! Sig ^"%s^"^nfor at starte kampen!
+NO_CHANGE_MATCH =  Du kan ikke aendre en startet klankamp!
+SETTINGS_LOADED = Indstillingerne fra filen dod_matchbase.cfg er indlaest!
+CFG_FILE_NOT_EXIST = Kunne ikke indlaese kampindstillingerne! Filen dod_matchbase.cfg eksisterer ikke!
+INFOS_1 = Bane1 = %s ; Bane2 = %s ; Banemetode = %d ; Tid = %d ; FF = %d ; 
+INFOS_2 = Vis Tiden = %d ; Vis Point = %d ; Kodeord = %s ; 
+INFOS_3 = Servernavn = %s ; Klanmaerke1 = %s ; Klanmaerke2 = %s ; 
+INFOS_4 = Klarsignal = %s ; Stopsignal = %s ; Kampens tidsresultat = %d
+MAP_NOT_VALID1 = Map1: %s er ikke gyldig! Tjek din stavning!
+MAP_NOT_VALID2 = Map2: %s er ikke gyldig! Tjek din stavning!
+MAPMOD_NOT_VALID = MapMode: %d er ikke gyldig! Brug 1 eller 2!
+TIME_NOT_VALID = Time: %d er ikke gyldig! Vaelg en tid der er stoerre end 0!
+FF_NOT_VALID = FF: %d er ikke gyldig! Brug 1 eller 0!
+SHOWTIME_NOT_VALID = ShowTime: %d er ikke gyldig! Brug 1/2/3/4/0 !
+SHOWSCORE_NOT_VALID = ShowScore: %d er ikke gyldig! Brug 1/2/3/4/5/6/0 !
+PASS_NOT_VALID = Password: %s er ikke gyldig! Vaelg en anden!
+MATCH_IS_RUNNING = DoD klankamp koerer allerede!
+MATCH_IS_NOT_RUNNING = DoD klankamp koerer ikke!
+MATCH_ABORDED = DoD klankamp er afbrudt!
+STATUS_ABORDED = Klan %s ophaevede klarstatus!
+STATUS_READY = Klan %s er klar til at kaempe!
+SIGNAL_CANCEL = Sig ^"%s^" for at ophaeve klarstatus!
+LAST_MINUTE = Sidste minut
+MINUTES_RESTANTES = %d minutter tilbage
+NOT_RESTART = DoD klankamp kaoer IKKE! Du kan ikke restarte runden!
+RESTART_ROUND = Restarter nuvaerende runde!
+JOIN_TEAM_AXIS = Klan %s gaa paa holdet Axis!
+JOIN_TEAM_ALLIES = Klan %s gaa paa holdet Allies !
+SHOW_RESULT_1 = \yKlan %s^n\w- Total Point: %d^n^n\yKlan %s^n\w- Total Point: %d^n^n\yVinder: \w%s med %d points til forskel!^n^n\r2. \wDetaljer / \r3. \wBane Point / \r0. \wLuk
+SHOW_RESULT_2 = \yKlan %s^n\w- Total Point: %d^n^n\yKlan %s^n\w- Total Point: %d^n^n\yVinder: \w%s med %d points til forskel!^n^n\r2. \wDetaljer / \r3. \wBane Point / \r0. \wLuk
+SHOW_DETAILS_1 = \yBane1: %s^n\w- Axis: %d^n- Allies: %d^n^n\yBane2: %s^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultat / \r3. \wBane Point / \r0. \wLuk
+SHOW_DETAILS_2 = \yBane1: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yBane1: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\yBane2: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yBane2: %s Runde2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultat / \r3. \wBane Point/ \r0. \wLuk
+SHOW_MAPSCORES_1 = \yBane1: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\yBane2: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wResultat / \r2. \wDetaljer / \r0. \wLuk
+SHOW_MAPSCORES_2 = \yBane1: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\yBane2: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wResultat / \r2. \wDetaljer / \r0. \wLuk
+
+[da]
+HLTV_STOP = Stopper optagelsen af HLTV demo!
+HLTV_START = Starter optagelsen af HLTV demo!
+HLTV_NOT_CONNECT = HLTV er ikke forbundet!
+NO_HLTV = Kunne ikke skabe forbindelse til HLTV paa %s
+MESSAGE_RED_START = Klan %s klanleder! Sig ^"%s^"^nfor at starte kampen!
+NO_CHANGE_MATCH =  Du kan ikke aendre en startet klankamp!
+SETTINGS_LOADED = Indstillingerne fra filen dod_matchbase.cfg er indlaest!
+CFG_FILE_NOT_EXIST = Kunne ikke indlaese kampindstillingerne! Filen dod_matchbase.cfg eksisterer ikke!
+INFOS_1 = Bane1 = %s ; Bane2 = %s ; Banemetode = %d ; Tid = %d ; FF = %d ; 
+INFOS_2 = Vis Tiden = %d ; Vis Point = %d ; Kodeord = %s ; 
+INFOS_3 = Servernavn = %s ; Klanmaerke1 = %s ; Klanmaerke2 = %s ; 
+INFOS_4 = Klarsignal = %s ; Stopsignal = %s ; Kampens tidsresultat = %d
+MAP_NOT_VALID1 = Map1: %s er ikke gyldig! Tjek din stavning!
+MAP_NOT_VALID2 = Map2: %s er ikke gyldig! Tjek din stavning!
+MAPMOD_NOT_VALID = MapMode: %d er ikke gyldig! Brug 1 eller 2!
+TIME_NOT_VALID = Time: %d er ikke gyldig! Vaelg en tid der er stoerre end 0!
+FF_NOT_VALID = FF: %d er ikke gyldig! Brug 1 eller 0!
+SHOWTIME_NOT_VALID = ShowTime: %d er ikke gyldig! Brug 1/2/3/4/0 !
+SHOWSCORE_NOT_VALID = ShowScore: %d er ikke gyldig! Brug 1/2/3/4/5/6/0 !
+PASS_NOT_VALID = Password: %s er ikke gyldig! Vaelg en anden!
+MATCH_IS_RUNNING = DoD klankamp koerer allerede!
+MATCH_IS_NOT_RUNNING = DoD klankamp koerer ikke!
+MATCH_ABORDED = DoD klankamp er afbrudt!
+STATUS_ABORDED = Klan %s ophaevede klarstatus!
+STATUS_READY = Klan %s er klar til at kaempe!
+SIGNAL_CANCEL = Sig ^"%s^" for at ophaeve klarstatus!
+LAST_MINUTE = Sidste minut
+MINUTES_RESTANTES = %d minutter tilbage
+NOT_RESTART = DoD klankamp koerer IKKE! Du kan ikke restarte runden!
+RESTART_ROUND = genstarter nuvaerende runde!
+JOIN_TEAM_AXIS = Klan %s gaa paa holdet Axis!
+JOIN_TEAM_ALLIES = Klan %s gaa paa holdet Allies !
+SHOW_RESULT_1 = \yKlan %s^n\w- Total Point: %d^n^n\yKlan %s^n\w- Total Point: %d^n^n\yVinder: \w%s med %d points til forskel!^n^n\r2. \wDetaljer / \r3. \wBane Point / \r0. \wLuk
+SHOW_RESULT_2 = \yKlan %s^n\w- Total Point: %d^n^n\yKlan %s^n\w- Total Point: %d^n^n\yVinder: \w%s med %d points til forskel!^n^n\r2. \wDetaljer / \r3. \wBane Point / \r0. \wLuk
+SHOW_DETAILS_1 = \yBane1: %s^n\w- Axis: %d^n- Allies: %d^n^n\yBane2: %s^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultat / \r3. \wBane Point / \r0. \wLuk
+SHOW_DETAILS_2 = \yBane1: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yBane1: %s Round2^n\w- Axis: %d^n- Allies: %d^n^n\yBane2: %s Runde1^n\w- Axis: %d^n- Allies: %d^n\yBane2: %s Runde2^n\w- Axis: %d^n- Allies: %d^n^n\r1. \wResultat / \r3. \wBane Point/ \r0. \wLuk
+SHOW_MAPSCORES_1 = \yBane1: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\yBane2: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wResultat / \r2. \wDetaljer / \r0. \wLuk
+SHOW_MAPSCORES_2 = \yBane1: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\yBane2: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wResultat / \r2. \wDetaljer / \r0. \wLuk
+
+[pl]
+HLTV_STOP = Zatrzymywanie nagrywania dema przez HLTV!
+HLTV_START = Rozpoczynanie nagrywania dema przez HLTV!
+HLTV_NOT_CONNECT = HLTV nie jest podlaczone!
+NO_HLTV = Nie mozna podlaczyc do HLTV na %s
+MESSAGE_RED_START = Klan %s Lider klanu! Powiedz ^"%s^"^naby zaczac mecz!
+NO_CHANGE_MATCH = Nie mozesz zmienic uruchomionego meczu klanowego!
+SETTINGS_LOADED = Ustawienia z pliku dod_matchbase.cfg zaladowane!
+CFG_FILE_NOT_EXIST = Nie udalo sie zaladowac ustawien meczu! Plik dod_matchbase.cfg nie istnieje!
+INFOS_1 = 1. mapa = %s ; 2. mapa = %s ; Tryb map = %d ; Czas = %d ; FF = %d ;
+INFOS_2 = Pokazuj czas = %d ; Pokazuj wynik = %d ; Haslo = %s ;
+INFOS_3 = Nazwa serwera = %s ; Tag 1. klanu = %s ; Tag 2. klanu = %s ;
+INFOS_4 = Sygnalizowanie gotowosci = %s ; Sygnalizowanie zaniechania = %s ; Czas, wynik meczu = %d
+MAP_NOT_VALID1 = 1. mapa: %s nie jest prawidlowa! Sprawdz pisownie!
+MAP_NOT_VALID2 = 2. mapa: %s nie jest prawidlowa! Sprawdz pisownie!
+MAPMOD_NOT_VALID = Tryb map: %d nie jest prawidlowy! Uzyj 1 lub 2!
+TIME_NOT_VALID = Czas: %d nie jest prawidlowy! Wybierz czas wiekszy niz 0!
+FF_NOT_VALID = FF: %d nie jest prawidlowy! Uzyj 1 lub 0!
+SHOWTIME_NOT_VALID = Pokazuj czas: %d nie jest prawidlowe! Uzyj 1/2/3/4/0!
+SHOWSCORE_NOT_VALID = Pokazuj wynik: %d nie jest prawidlowe! Uzyj 1/2/3/4/5/6/0!
+PASS_NOT_VALID = Haslo: %s nie jest prawidlowe! Wybierz inne!
+MATCH_IS_RUNNING = Mecz klanowy DoD jest juz uruchomiony!
+MATCH_IS_NOT_RUNNING = Mecz klanowy DoD nie jest uruchomiony!
+MATCH_ABORDED = Mecz klanowy DoD zostal zatrzymany!
+STATUS_ABORDED = Klan %s odwolal stan gotowosci!
+STATUS_READY = Klan %s jest gotowy do walki!
+SIGNAL_CANCEL = Powiedz ^"%s^" aby odwolac stan gotowosci!
+LAST_MINUTE = Uplywa ostatnia minuta
+MINUTES_RESTANTES = Pozostalo minut: %d
+NOT_RESTART = Mecz klanowy DoD NIE jest uruchomiony! Nie mozesz zrestartowac rundy!
+RESTART_ROUND = Restartowanie obecnej rundy!
+JOIN_TEAM_AXIS = Klan %s dolaczyl do Sil Osi!
+JOIN_TEAM_ALLIES = Klan %s dolaczyl do Aliantow!
+SHOW_RESULT_1 = \yKlan %s^n\w- Wynik koncowy: %d^n^n\yKlan %s^n\w- Wynik koncowy: %d^n^n\yZwyciezca: \w%s z roznica punktow: %d!^n^n\r2. \wSzczegoly / \r3. \wWyniki map / \r0. \wZamknij
+SHOW_RESULT_2 = \yKlan %s^n\w- Wynik koncowy: %d^n^n\yKlan %s^n\w- Wynik koncowy: %d^n^n\yZwyciezca: \w%s z roznica punktow: %d!^n^n\r2. \wSzczegoly / \r3. \wWyniki map / \r0. \wZamknij
+SHOW_DETAILS_1 = \y1. mapa: %s^n\w- Sily Osi: %d^n- Alianci: %d^n^n\y2. mapa: %s^n\w- Sily Osi: %d^n- Alianci: %d^n^n\r1. \wWynik / \r3. \wWyniki map / \r0. \wZamknij
+SHOW_DETAILS_2 = \y1. mapa: %s 1. runda^n\w- Sily Osi: %d^n- Alianci: %d^n\y1. mapa: %s 2. runda^n\w- Sily Osi: %d^n- Alianci: %d^n^n\y2. mapa: %s 1. runda^n\w- Sily Osi: %d^n- Alianci: %d^n\y2. mapa: %s 2. runda^n\w- Sily Osi: %d^n- Alianci: %d^n^n\r1. \wWynik / \r3. \wWyniki map / \r0. \wZamknij
+SHOW_MAPSCORES_1 = \y1. mapa: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\y2. mapa: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wWynik / \r2. \wSzczegoly / \r0. \wZamknij
+SHOW_MAPSCORES_2 = \y1. mapa: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\y2. mapa: %s^n\w- Klan %s: %d^n- Klan %s: %d^n^n\r1. \wWynik / \r2. \wSzczegoly / \r0. \wZamknij

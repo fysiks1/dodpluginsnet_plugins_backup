@@ -1,0 +1,53 @@
+[en]
+ACCEPT = Accept
+REFUSE = Refuse
+NO_AFF_RULES = Sorry, you have not acces for post the rules with everyone!
+LOG_EREASE = Logs file ereased!
+NO_LOGS_FILE = No logs file found!
+NO_EREASE = Sorry, you have not acces for erease the logs file!
+NO_COMPAT_MOD = Delete %s and reconnect to get proper file!
+KICK_REASON = Incorrect nick name!
+LOG_KICK = %s as bin kicked for his incorrect nickname!
+ADD_RESTRICT_NAME = %s as bin added in incorrect's nickname list!
+PROB_ADD_ACCEPT = The server encountered an error while performing a query. Steam ID: '%s' Error: '%s'
+PROB_ADD_RESTRICT = The server encountered an error while performing a query. Name: '%s' Error: '%s'
+PROB_CONNECT_SQL = The server encountered an error while connecting to Database.  Error: '%s'
+NO_FIND_PLAYER = No find the player : %s!
+RESTRICT_ONLINE = %i restricted names loaded!
+ADD_ACCEPT = %s have accept the server rules!
+
+[fr]
+ACCEPT = Accepter
+REFUSE = Refuser
+NO_AFF_RULES = Desole mais vous n'avez pas le droit d'afficher les regles a tout le monde!
+LOG_EREASE = Fichier logs de connexions vide!
+NO_LOGS_FILE = Aucun fichier logs n'a ete trouve!
+NO_EREASE = Desole mais vous n'avez pas le droit de vider le fichier logs!
+NO_COMPAT_MOD = Desole mais il vous faut effacer le fichier %s et re-essayer!
+KICK_REASON = Pseudo incorrect!
+LOG_KICK = %s a ete kicke pour son pseudo incorrect!
+ADD_RESTRICT_NAME = %s a ete ajouté dans la liste des pseudos incorrects!
+PROB_ADD_ACCEPT = Un probleme est survenu lors de l'insersion du Steam ID dans la table accept rules: '%s' Error: '%s'
+PROB_ADD_RESTRICT =  Un probleme est survenu lors de l'insersion du nom: '%s' dans la table des nom interdits Error: '%s'
+PROB_CONNECT_SQL = La connexion a la base de donnees a echoue.  Error: '%s'
+NO_FIND_PLAYER = Le joueur %s n'a pas ete trouve!
+RESTRICT_ONLINE = %i noms interdits charges!
+ADD_ACCEPT = %s a accepte les reglements du serveur et peut donc commencer a jouer en esperant qu'il les respecte!
+
+[pl]
+ACCEPT = Akceptuje
+REFUSE = Odrzucam
+NO_AFF_RULES = Przykro mi, nie masz odpowiedniego dostepu aby wyswietlic graczom zasady!
+LOG_EREASE = Pliki z logami skasowane!
+NO_LOGS_FILE = Nie znaleziono plikow z logami!
+NO_EREASE = Przykro mi, nie mozesz wymazac logow!
+NO_COMPAT_MOD = Skasuj %s i polacz sie ponownie aby poprac poprawny plik!
+KICK_REASON = Nieprawidlowy nick!
+LOG_KICK = %s zostal wykopany z powodu nieprawidlowego nicka!
+ADD_RESTRICT_NAME = %s zostal dodany do listy niepoprawnych nickow!
+PROB_ADD_ACCEPT = Serwer napotkal blad przy formulowaniu zapytania. Steam ID: '%s' Blad: '%s'
+PROB_ADD_RESTRICT = Serwer napotkal blad przy formulowaniu zapytania. Nazwa: '%s' Blad: '%s'
+PROB_CONNECT_SQL = Serwer napotkal blad przy podlaczaniu sie do bazy danych. Blad: '%s'
+NO_FIND_PLAYER = Nie moge znalec gracza : %s!
+RESTRICT_ONLINE = Zaladowano %i zastrzezonych nickow!
+ADD_ACCEPT = %s zaakceptowal zasady panujace na serwerze!

@@ -1,0 +1,27 @@
+[en]
+ANNOUNCE = If your ping exceeds %ims, you will be kicked!
+PING_TOO_HIGH = Sorry, but your ping is too high, you will be kicked now!
+CONSTANT_LOW_PING = Checking disabled due to constant low ping!
+KICKED = %s has been kicked due to his ping exceeding %ims!
+KICK = Your ping is too high!
+
+[de]
+ANNOUNCE = Wenn dein Ping %ims uebersteigt wirst Du gekickt!
+PING_TOO_HIGH = Dein Ping ist zu hoch, Du wirst jetzt gekickt!
+CONSTANT_LOW_PING = Pingpruefung wurde ausgeschaltet, Dein Ping ist in Ordnung!
+KICKED = %s wurde gekickt, da sein Ping %ims uerberstieg!
+KICK = Dein Ping ist zu hoch!
+
+[fr]
+ANNOUNCE = Si votre ping depasse les %ims, vous serez kicke!
+PING_TOO_HIGH = Desole mais votre ping est trop haut, vous allez etre kicke!
+CONSTANT_LOW_PING = Verification du ping desactive : ping constamment bas!
+KICKED = %s a ete kicke (ping depassant les %ims)!
+KICK = Ping trop haut!
+
+[pl]
+ANNOUNCE = Jesli Twoj ping przekracza %ims, zostaniesz wyrzucony z serwera!
+PING_TOO_HIGH = Niestety Twoj ping jest za wysoki, zaraz zostaniesz wyrzucony z serwera!
+CONSTANT_LOW_PING = Sprawdzanie pingu wylaczone. Twoj ping jest stale na niskim poziomie!
+KICKED = %s zostal wyrzucony z serwera poniewaz jego ping przekraczal %ims!
+KICK = Twoj ping jest za wysoki!

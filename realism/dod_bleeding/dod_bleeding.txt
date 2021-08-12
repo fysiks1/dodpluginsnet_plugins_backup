@@ -1,0 +1,9 @@
+[en]
+BANDAGE = When you are bleeding you have to bandage!
+PRESSUSE = 'USE' is set to key 'E' by default! Try that key!
+BLEEDING = YOU ARE BLEEDING!!!^n^nPress your 'USE'-Key to Bandage!!!
+
+[de]
+BANDAGE = Wenn Du verletzt wirst blutest Du und musst deine Wunde verbinden!
+PRESSUSE = 'Aktivieren' ist in der Standardkonfiguration die Taste 'E'!
+BLEEDING = DU BLUTEST!!!^n^nDruecke die 'Aktivieren'-Taste zum bandagieren!!!

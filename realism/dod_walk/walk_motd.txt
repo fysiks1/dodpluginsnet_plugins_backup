@@ -1,0 +1,7 @@
+To use Dod Walk, type this in your console:
+
+bind KEY +dod_walk
+
+(Replacing "KEY" with the key you'd like to use to walk)
+
+Visit www.dodplugins.net for more Day of Defeat Plugins!

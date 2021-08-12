@@ -1,0 +1,18 @@
+[en]
+DROPPED_RES = Dropped due to slot reservation
+REDIRECTTOFREESLOT = %s was redirected to %s:%d to free a slot for %s!
+KICKTOFREESLOT = %s was kicked to free a slot for %s!
+ADMINNEEDSLOT = An admin needed this slot!
+
+
+[de]
+DROPPED_RES = Sorry, dieser Slot ist reserviert.
+REDIRECTTOFREESLOT = %s wurde umgeleitet auf %s:%d um einen Slot fuer %s frei zu machen!
+KICKTOFREESLOT = %s wurde gekickt um einen Slot fuer %s frei zu machen!
+ADMINNEEDSLOT = Ein Administrator braucht diesen Slot!
+
+[fr]
+DROPPED_RES = Desole, un admin vient de prendre sa place reservee, tu as ete ejecte du serveur.
+REDIRECTTOFREESLOT = %s a ete redirige vers %s:%d pour libere un slot pour %s!
+KICKTOFREESLOT = %s a ete kicke pour liberer a slot pour %s!
+ADMINNEEDSLOT = Un admin avait besoin de ta place!
