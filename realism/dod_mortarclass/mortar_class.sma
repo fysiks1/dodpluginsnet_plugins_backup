@@ -21,6 +21,7 @@
 //
 //   1.0 - Initial Release - 24 JUL 2006
 //   1.1 - Basic Bug Fixes - 30 AUG 2006
+//   1.11- Overlooked Bugs Fixes - 03 SEP 2006
 //
 //
 //   Known Bugs: (Not sure how to fix)
@@ -104,6 +105,10 @@
 //   -Mortar kills now log as a mortar (instead of missile)
 //   -Fixed bug with non-mortar classes getting ammo
 //   -Fixed bazooka-drop-run bug
+//
+//   v1.11
+//   -Fixed kills logging double
+//   -Fixed class limits not recognising "-1"
 ////////////////////////////////////////////
 
 #include <amxmodx>
@@ -268,21 +273,21 @@ public go_mortar(id) {
 	} 
 	
 	if(team == ALLIES && dod_get_map_info(MI_ALLIES_TEAM) == 0) {
-		if(curAllies < limAllies) {
+		if(curAllies < limAllies || limAllies == -1) {
 			dod_set_user_class(id, 9)
 			client_print(id, print_chat, "*You will respawn as Mortar")
 		} else
 			client_cmd(id, "cls_mortar")
 	}
 	else if (team == ALLIES && dod_get_map_info(MI_ALLIES_TEAM) == 1) {
-		if(curBrit < limBrit) {
+		if(curBrit < limBrit || limBrit == -1) {
 			dod_set_user_class(id, 26)
 			client_print(id, print_chat, "*You will respawn as Mortar")
 		} else
 			client_cmd(id, "cls_britmortar")
 	}
 	else if(team == AXIS) {
-		if(curAxis < limAxis) {
+		if(curAxis < limAxis || limAxis == -1) {
 			dod_set_user_class(id, 20)
 			client_print(id, print_chat, "*You will respawn as Morserschutze")
 		} else
@@ -703,11 +708,7 @@ do_victim(victim,attacker,damage,unarmed,tk) {
 				namek,get_user_userid(attacker),authida,teama,namev,get_user_userid(victim),authidv,teamv)
 		}
 
-		if(tk == 0) {
-			if(victim != attacker)
-				set_user_frags(attacker,get_user_frags(attacker) + 1 )
-		}
-		else {
+		if(tk > 0) {
 			tkcount[attacker] += 1
 			set_user_frags(attacker,get_user_frags(attacker) - 1 )
 		}
