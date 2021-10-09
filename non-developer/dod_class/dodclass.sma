@@ -15,7 +15,7 @@
 #include <dodx>
 
 #define PLUGIN "DoD Class"
-#define VERSION "0.9c"
+#define VERSION "0.9d"
 #define AUTHOR "Allenwr"
 
 enum DODClassData {
@@ -234,8 +234,8 @@ public RocketMenuSelect(id, key) {
 			print_client(id, CLASS[7][DODCL_WepName])
 		}
 		case 1: {
-			dod_set_user_class(id, CLASS[12][DODCL_Class])
-			print_client(id, CLASS[12][DODCL_WepName])
+			dod_set_user_class(id, CLASS[17][DODCL_Class])
+			print_client(id, CLASS[17][DODCL_WepName])
 		}
 		case 2: {
 			dod_set_user_class(id, CLASS[22][DODCL_Class])
