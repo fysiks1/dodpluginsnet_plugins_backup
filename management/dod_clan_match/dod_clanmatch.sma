@@ -5,6 +5,7 @@
 // http://www.dodplugins.net
 //
 // Author: FeuerSturm
+// Modded: diamond-optic
 //
 //
 // This program is free software; you can redistribute it and/or
@@ -450,10 +451,31 @@
 //      - added Multilanguagesupport
 //      - removed some lines of duplicate code
 //
+// - 04.22.2007 Version 0.9
+//      - added Multilanguagesupport
+//      - removed some lines of duplicate code
+//
+// - 04.22.2018 Version 0.9-mod (diamond-optic)
+//      - added cvar (dod_cm_nowarmupweapons) to strip weapons on warmup spawn
+//
+// - 04.26.2018 Version 0.9-mod2 (diamond-optic)
+//      - fix for holding drop key while spawning
+//
+// - 05.06.2018 Version 0.9-mod3 (diamond-optic)
+//      - DoD chat shortcut '%t' will now use the remaining time in match
+//	- AMXX chat shortcut 'timeleft' will now use the remaining time in match
+//
+
 
 #include <amxmodx>
 #include <amxmisc>
 #include <dodx>
+
+/////////////////////////////////////
+//Added by diamond-optic
+#include <fun>
+#include <hamsandwich>
+/////////////////////////////////////
 
 #define MAX_MAPS 64
 
@@ -488,10 +510,22 @@ new dod_cm_map12scoreallies
 new dod_cm_map22scoreaxis
 new dod_cm_map22scoreallies
 
+/////////////////////////////////////
+//Added by diamond-optic
+new pCvar_NoWarmupWeapons, pCvar_TimeVoice
+new bool:bStripWeapons
+new bool:bFirstRound
+new Float:fMatchStartTime
+
+// time display flags
+const TD_NO_REMAINING_VOICE = 4		// c - don't add "remaining" (only in voice)
+const TD_NO_HOURS_MINS_SECS_VOICE = 8	// d - don't add "hours/minutes/seconds" (only in voice)
+/////////////////////////////////////
+
 public plugin_init()
 {
-	register_plugin("DoD ClanMatch","0.9","AMXX DoD Team")
-	register_cvar("dod_clanmatch_plugin", "Version 0.9 by FeuerSturm | www.dodplugins.net", FCVAR_SERVER|FCVAR_SPONLY)
+	register_plugin("DoD ClanMatch","0.9-mod3","AMXX DoD Team")
+	register_cvar("dod_clanmatch_plugin", "Version 0.9-mod3 by FeuerSturm & diamond-optic | www.dodplugins.net", FCVAR_SERVER|FCVAR_SPONLY)
 	register_statsfwd(XMF_SCORE)
 	register_concmd("amx_loaddodmatch","cmd_loaddodmatch",ADMIN_CVAR,"- loads your match settings from dod_matchbase.cfg")
 	register_concmd("amx_setdodmatcha","cmd_setdodmatcha",ADMIN_CVAR,"<map1> <map2> <mapmode> <time> <ff> <showtime> <showscore>")
@@ -561,8 +595,154 @@ public plugin_init()
 	register_cvar("dod_cm_readysig", "ready")
 	register_cvar("dod_cm_cancelsig", "cancel")
 	register_dictionary("dod_clanmatch.txt")
+	
+	/////////////////////////////////////
+	//Added by diamond-optic	
+	RegisterHam(Ham_Spawn, "player", "func_HamSpawn", 1)
+	
+	register_message(get_user_msgid("CurWeapon"), "func_msgCurWeapon")
+	
+	register_event("RoundState","func_RoundState","a","1=0")
+	
+	pCvar_NoWarmupWeapons = register_cvar("dod_cm_nowarmupweapons", "1")
+	pCvar_TimeVoice = get_cvar_pointer("amx_time_voice")
+	
+	register_clcmd("say","func_CheckChat")
+	register_clcmd("say_team","func_CheckChat")
+	
+	register_clcmd("say timeleft", "func_SayTimeLeft", 0, "- displays timeleft")
+	register_clcmd("say_team timeleft", "func_SayTimeLeft", 0, "- displays timeleft")
+	/////////////////////////////////////
 }
 
+/////////////////////////////////////
+//Added by diamond-optic
+public func_HamSpawn(id)
+	if(!matchrunning && get_pcvar_num(pCvar_NoWarmupWeapons) && get_pcvar_num(dod_clanmatch) && get_cvar_num("mp_clan_match"))
+		set_task(0.1,"func_StripWeapons",id)
+
+public func_StripWeapons(id)
+	if((clansready !=2 || bStripWeapons == true) && is_user_alive(id))
+		strip_user_weapons(id)
+	
+public func_RoundState()
+	if(clansready == 2 && get_pcvar_num(dod_clanmatch) && get_cvar_num("mp_clan_match"))
+		bStripWeapons = false
+
+public func_msgCurWeapon(msgid, msgdest, id)
+	if(!matchrunning && get_pcvar_num(pCvar_NoWarmupWeapons) && get_pcvar_num(dod_clanmatch) && get_cvar_num("mp_clan_match") && get_msg_arg_int( 1 ) && is_user_alive(id))
+		set_task(0.1,"func_StripWeapons",id)
+		
+public func_CheckChat(id)
+{
+	if(matchrunning && get_pcvar_num(dod_clanmatch) && get_cvar_num("mp_clan_match"))
+		{
+		static sText[192]
+		read_args(sText,charsmax(sText))
+	
+		if(containi(sText, "%t") != -1)
+			{
+			new iMatchTimeLeft = func_GetMatchTimeLeft()
+			
+			new sTimeLeft[7]
+			formatex(sTimeLeft, charsmax(sTimeLeft), "%d:%02d", (iMatchTimeLeft / 60), (iMatchTimeLeft % 60))
+			
+			replace(sText, charsmax(sText), "%t", sTimeLeft)
+		
+			new sCmd[10]
+			read_argv(0,sCmd,charsmax(sCmd))
+			engclient_cmd(id,sCmd,sText)
+				
+			return PLUGIN_HANDLED		
+			}
+		}
+		
+	return PLUGIN_CONTINUE
+}
+
+public func_SayTimeLeft(id)
+{
+	if(get_pcvar_num(dod_clanmatch) && get_cvar_num("mp_clan_match"))
+		{
+		new iMatchTimeLeft
+		
+		switch(matchrunning)
+			{
+			case 0:iMatchTimeLeft = get_timeleft()
+			case 1: iMatchTimeLeft = func_GetMatchTimeLeft()
+			}
+		
+		if (get_pcvar_num(pCvar_TimeVoice))
+			{
+			new svoice[128]
+			setTimeVoice(svoice, charsmax(svoice), 0, iMatchTimeLeft)
+			client_cmd(id, "%s", svoice)
+			}
+			
+		client_print(0, print_chat, "%L:  %d:%02d", LANG_PLAYER, "TIME_LEFT", (iMatchTimeLeft / 60), (iMatchTimeLeft % 60))
+		}
+	
+	return PLUGIN_CONTINUE
+}
+
+setTimeVoice(text[], len, flags, tmlf)
+{
+	new temp[7][32]
+	new secs = tmlf % 60
+	new mins = tmlf / 60
+	
+	// for (new a = 0;a < 7;++a) // we just created it, already null
+		// temp[a][0] = 0
+
+	if (secs > 0)
+	{
+		num_to_word(secs, temp[4], charsmax(temp[]))
+		
+		if ( ~flags & TD_NO_HOURS_MINS_SECS_VOICE ) 
+			temp[5] = "seconds "	/* there is no "second" in default hl */
+	}
+	
+	if (mins > 59)
+	{
+		new hours = mins / 60
+		
+		num_to_word(hours, temp[0], charsmax(temp[]))
+		
+		if ( ~flags & TD_NO_HOURS_MINS_SECS_VOICE )
+			if(mins > 119)
+				temp[1] = "hours "
+			else
+				temp[1] = "hour "
+			
+		mins = mins % 60
+	}
+	
+	if (mins > 0)
+	{
+		num_to_word(mins, temp[2], charsmax(temp[]))
+		
+		if ( ~flags & TD_NO_HOURS_MINS_SECS_VOICE )
+			temp[3] = "minutes "
+	}
+	
+	if ( ~flags & TD_NO_REMAINING_VOICE )
+		temp[6] = "remaining "
+	
+	return formatex(text, len, "spk ^"vox/%s%s%s%s%s%s%s^"", temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6])
+}
+
+stock func_GetMatchTimeLeft()
+{
+	new iMatchTimeLeft = floatround((get_pcvar_num(dod_cm_time) * 60) - (get_gametime() - fMatchStartTime))
+	
+	if(iMatchTimeLeft < 0)
+		iMatchTimeLeft = 0
+	
+	return iMatchTimeLeft
+}
+
+/////////////////////////////////////
+	
 public get_matchmaps()
 {
 	new matchmapfile[128]
@@ -634,6 +814,13 @@ public plugin_cfg()
 	new clanmatch = get_pcvar_num(dod_clanmatch)
 	if(get_cvar_num("mp_clan_match") == 1 && clanmatch == 1)
 	{
+	
+		/////////////////////////////////////
+		//Added by diamond-optic
+		bStripWeapons = true
+		bFirstRound = true
+		/////////////////////////////////////
+	
 		if((cm_mapmode == 1 && cm_mapsplayed < 2) || (cm_mapmode == 2 && cm_mapsplayed < 4))
 		{
 			set_pcvar_num(dod_cm_mapsplayed,(cm_mapsplayed + 1))
@@ -1106,7 +1293,7 @@ public cmd_stopdodmatch(id,level,cid)
 	remove_task(73823)
 	remove_task(53452)
 	remove_task(98125)
-	matchrunning = 0
+	matchrunning = 0	
 	load_standard()
 	set_hudmessage(0, 0, 255, -1.0, -1.0, 0, 6.0, 10.0, 0.1, 0.2, 4)
 	show_hudmessage(0,"%L",LANG_PLAYER,"MATCHABORTED")
@@ -1438,10 +1625,21 @@ public match_start()
 		new matchlimit = get_pcvar_num(dod_cm_time)
 		set_cvar_num("mp_timelimit",(matchlimit + (timelimit - minleft)))
 		matchrunning = 1
+		
 		set_task(0.1,"calc_seconds")		
 	}
 	if(get_cvar_num("mp_clan_match") == 1 && get_pcvar_num(dod_clanmatch) == 1 && matchrunning == 1)
 	{
+		/////////////////////////////////////
+		//Added by diamond-optic
+		if(bFirstRound)
+			{
+			bFirstRound = false
+			
+			fMatchStartTime = get_gametime()
+			}
+		/////////////////////////////////////
+	
 		if(get_pcvar_num(dod_cm_showtime) != 0)
 		{
 			new cm_showtime = get_pcvar_num(dod_cm_showtime)
@@ -2976,6 +3174,3 @@ public match_changeff(id,key)
 	}
 	return PLUGIN_HANDLED
 }
-/* AMXX-Studio Notes - DO NOT MODIFY BELOW HERE
-*{\\ rtf1\\ ansi\\ deff0{\\ fonttbl{\\ f0\\ fnil Tahoma;}}\n\\ viewkind4\\ uc1\\ pard\\ lang1031\\ f0\\ fs16 \n\\ par }
-*/
