@@ -933,7 +933,7 @@ public log_pdata( id ) {
 	{
 		new test_sz[128], test_int = get_pdata_int( m_pdata_ent, i );
 		new Float:test_fl  = get_pdata_float( m_pdata_ent, i );
-		get_pdata_string( m_pdata_ent, i, test_sz, 127 );
+		get_pdata_string( m_pdata_ent, i, test_sz, 127, .linux=5);
 		
 		if( !test_int && !test_fl ) continue;
 		
@@ -995,7 +995,7 @@ public search_pdata( id ) {
 	{
 		new test_sz[128], test_int = get_pdata_int( m_pdata_ent, i );
 		new Float:test_fl  = get_pdata_float( m_pdata_ent, i );
-		get_pdata_string( m_pdata_ent, i, test_sz, 127 );
+		get_pdata_string( m_pdata_ent, i, test_sz, 127, .linux=5);
 		
 		if( m_pdata_target == test_int || m_pdata_target == test_int || equali(m_pdata_sztarget, test_sz) )
 			console_print( id, "[Ent %i][Offset %i] Int: %i Float: %f Sz: %s", m_pdata_ent, i, test_int, test_fl, test_sz );
