@@ -425,7 +425,7 @@ public cvar_result_volume(id,const cvar[],const value[])
 	
 		if(gVolume[id] < 0.1)
 			{
-			client_cmd(id,"volume 1.0")
+			client_cmd(id,"volume 1.0") // This command can no longer be sent to the client.
 				
 			gVolume[id] = 1.0
 			}
@@ -586,7 +586,7 @@ public shellshock_fx(id,damage)
 		if(task_exists(VOL_TASK+id))
 			remove_task(VOL_TASK+id)
 			
-		client_cmd(id,"volume 0")
+		client_cmd(id,"volume 0") // This command can no longer be sent to the client.
 		volumeup[id] = 0
 	
 		
@@ -722,13 +722,13 @@ public volume_up(id)
 	
 	if(set_value < gVolume[id]) 
 		{
-		client_cmd(id,"volume %f",set_value)
+		client_cmd(id,"volume %f",set_value) // This command can no longer be sent to the client.
 		++volumeup[id]
 		set_task(set_time,"volume_up",VOL_TASK+id)
 		} 
 	else
 		{
-		client_cmd(id,"volume %f",gVolume[id])
+		client_cmd(id,"volume %f",gVolume[id]) // This command can no longer be sent to the client.
 		volumeup[id] = 0
 		}
 	return PLUGIN_HANDLED
@@ -795,7 +795,7 @@ public stop_all_effects(id)
 		{
 		remove_task(VOL_TASK+id)
 		
-		client_cmd(id,"volume %f",gVolume[id])
+		client_cmd(id,"volume %f",gVolume[id]) // This command can no longer be sent to the client.
 		volumeup[id] = 0
 		}
 
